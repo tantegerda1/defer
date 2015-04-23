@@ -1,0 +1,36 @@
+{
+  "name": "netztechniker/defer",
+  "description": "Help create objects that need to be 'paused'",
+  "keywords": ["pause", "resume", "deferrable", "developer"],
+  "homepage": "https://github.com/tantegerda1/defer",
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Ludwig Rafelsberger",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "netresearch/composer-patches-plugin": "~1.0",
+    "php": ">= 5.5.0, <= 5.6.99",
+    "typo3/cms": "6.2.*"
+  },
+  "type": "typo3-cms-extension",
+  "extra": {
+    "patches": {
+    "typo3/cms": {
+        "6.2.12": [
+          {
+            "url": "http://raw.githubusercontent.com/tantegerda1/defer/master/patches/typo3-cms-6.2.12.patch"
+          }
+        ]
+      }
+    }
+  },
+  "autoload": {
+    "psr-4": { "Netztechniker\\Defer\\": "Classes/" }
+  },
+  "support": {
+    "issues": "https://github.com/tantegerda1/defer/issues"
+  }
+}
