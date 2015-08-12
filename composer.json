@@ -18,10 +18,20 @@
   "type": "typo3-cms-extension",
   "extra": {
     "patches": {
-    "typo3/cms": {
+      "typo3/cms": {
         "6.2.12": [
           {
             "url": "http://raw.githubusercontent.com/tantegerda1/defer/master/patches/typo3-cms-6.2.12.patch"
+          }
+        ],
+        "6.2.13": [
+          {
+            "url": "http://raw.githubusercontent.com/tantegerda1/defer/master/patches/typo3-cms-6.2.13.patch"
+          }
+        ],
+        "6.2.14": [
+          {
+            "url": "http://raw.githubusercontent.com/tantegerda1/defer/master/patches/typo3-cms-6.2.14.patch"
           }
         ]
       }
