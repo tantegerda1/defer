@@ -1,0 +1,12 @@
+diff -ruN a/typo3/sysext/extbase/Classes/Reflection/ReflectionService.php b/typo3/sysext/extbase/Classes/Reflection/ReflectionService.php
+--- a/typo3/sysext/extbase/Classes/Reflection/ReflectionService.php	2015-04-24 01:05:09.343413000 +0200
++++ b/typo3/sysext/extbase/Classes/Reflection/ReflectionService.php	2015-04-21 10:06:43.368754000 +0200
+@@ -417,7 +417,7 @@
+ 	 * @return \TYPO3\CMS\Extbase\Reflection\ClassSchema The class schema
+ 	 */
+ 	protected function buildClassSchema($className) {
+-		if (!class_exists($className)) {
++		if (!class_exists($className) && !interface_exists($className)) {
+ 			throw new \TYPO3\CMS\Extbase\Reflection\Exception\UnknownClassException('The classname "' . $className . '" was not found and thus can not be reflected.', 1278450972);
+ 		}
+ 		$classSchema = $this->objectManager->get('TYPO3\\CMS\\Extbase\\Reflection\\ClassSchema', $className);
