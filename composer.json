@@ -33,6 +33,11 @@
           {
             "url": "http://raw.githubusercontent.com/tantegerda1/defer/master/patches/typo3-cms-6.2.14.patch"
           }
+        ],
+        "6.2.29": [
+          {
+            "url": "http://raw.githubusercontent.com/tantegerda1/defer/master/patches/typo3-cms-6.2.29.patch"
+          }
         ]
       }
     }
